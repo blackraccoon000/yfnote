@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "tsc --watch --preserveWatchOutput",
-    "prepublishOnly": "tsc"
+    "prepublishOnly": "esbuild src/index.ts --platform=node --outfile=dist/index.js --bundle --minify --define:process.env.NODE_ENV=\\\"production\\\""
   },
   "license": "MIT",
   "dependencies": {
@@ -20,6 +20,7 @@
     "@types/node": "^15.12.4",
     "@yfnote/local-api": "^1.0.0",
     "commander": "^7.2.0",
+    "esbuild": "0.8.26",
     "typescript": "^4.3.4"
   }
 }
