@@ -17,9 +17,9 @@
     "@yfnote/local-client": "^1.0.0"
   },
   "devDependencies": {
-    "commander": "^7.2.0",
-    "@yfnote/local-api": "^1.0.0",
     "@types/node": "^15.12.4",
+    "@yfnote/local-api": "^1.0.0",
+    "commander": "^7.2.0",
     "typescript": "^4.3.4"
   }
 }
